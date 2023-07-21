@@ -33,5 +33,8 @@ try:
         response = sess.get(url)
 
         print(datetime.now().strftime("%Y/%m/%d %H:%M:%S"), "Login Successful.")
+
+    url = "https://lwsu-linebot.herokuapp.com/"
+    response = sess.get(url)
 except Exception as e:
     print(datetime.now().strftime("%Y/%m/%d %H:%M:%S"), "Login Failed.")
